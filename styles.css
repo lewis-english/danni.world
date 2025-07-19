@@ -1,0 +1,370 @@
+/* Place your CSS styles in this file */
+
+h1 
+{
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: bolder;
+}
+
+  .heartShapedButtons
+  {
+      position: relative;
+      left: 20px;
+      width: 50px;
+      height: 45px;
+      background-color: rgba(0,0,0,0);
+  }
+ .heartShapedButtons:before,
+ .heartShapedButtons:after
+  {
+      position: absolute;
+      content: "";
+      font-size: 24;
+      left: 25px;
+      top: 0;
+      width: 25px;
+      height: 40px;
+      background-color: rgba(255,197,211, 1);
+      border-radius: 25px 25px 0 0;
+      transform: rotate(-45deg);
+      transform-origin: 0 100%;
+  }
+ .heartShapedButtons:after 
+ {
+      left: 0;
+      transform: rotate(45deg);
+      transform-origin: 100% 100%;
+ }
+ .rowa
+ {
+  display: inline-block;
+  margin: 0 5px;
+ }
+ #gameName
+ {
+  font-weight: 800;
+  font-size: 16px;
+ }
+ .letters1
+ {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 22px; 
+  text-align: center;
+  color: black;
+ }
+ #l1
+ {
+  position: absolute;
+  left: 48px;
+  top: 168px;
+ }
+ #l2
+ {
+  position: absolute;
+  left: 104px;
+  top: 168px;
+ }
+ #l3
+ {
+  position: absolute;
+  left: 157px;
+  top: 168px;
+ }
+ #l4
+ {
+  position: absolute;
+  left: 212px;
+  top: 168px;
+ }
+#l5
+{
+  position: absolute;
+  left: 265px;
+  top: 168px;
+}
+#l6
+{
+  position: absolute;
+  left: 320px;
+  top: 168px;
+}
+#l7
+{
+  position: absolute;
+  left: 48px;
+  top: 214px;
+}
+#l8
+{
+  position: absolute;
+  left: 104px;
+  top: 214px;
+}
+#l9
+{
+  position: absolute;
+  left: 157px;
+  top: 214px;
+}
+#l10
+{
+  position: absolute;
+  left: 212px;
+  top: 214px;
+}
+#l11
+{
+  position: absolute;
+  left: 265px;
+  top: 214px;
+}
+#l12
+{
+  position: absolute;
+  left: 320px;
+  top: 214px;
+}
+#l13
+{
+  position: absolute;
+  left: 48px;
+  top: 259px;
+}
+#l14
+{
+  position: absolute;
+  left: 104px;
+  top: 259px;
+}
+#l15
+{
+  position: absolute;
+  left: 157px;
+  top: 259px;
+}
+#l16
+{
+  position: absolute;
+  left: 212px;
+  top: 259px;
+}
+#l17
+{
+  position: absolute;
+  left: 265px;
+  top: 259px;
+}
+#l18
+{
+  position: absolute;
+  left: 320px;
+  top: 259px;
+}
+#l19
+{
+  position: absolute;
+  left: 48.5px;
+  top: 304px;
+}
+#l20
+{
+  position: absolute;
+  left: 104px;
+  top: 304px;
+}
+#l21
+{
+  position: absolute;
+  left: 157px;
+  top: 304px;
+}
+#l22
+{
+  position: absolute;
+  left: 212px;
+  top: 304px;
+}
+#l23
+{
+  position: absolute;
+  left: 265px;
+  top: 304px;
+}
+#l24
+{
+  position: absolute;
+  left: 320px;
+  top: 304px;
+}
+#l25
+{
+  position: absolute;
+  left: 48px;
+  top: 348.5px;
+}
+#l26
+{
+  position: absolute;
+  left: 104px;
+  top: 348.5px;
+}
+#l27
+{
+  position: absolute;
+  left: 157px;
+  top: 348.5px;
+}
+#l28
+{
+  position: absolute;
+  left: 212px;
+  top: 348.5px;
+}
+#l29
+{
+  position: absolute;
+  left: 265px;
+  top: 348.5px;
+}
+#l30
+{
+  position: absolute;
+  left: 320px;
+  top: 348.5px;
+}
+#l31
+{
+  position: absolute;
+  left: 48px;
+  top: 393px;
+}
+#l32
+{
+  position: absolute;
+  left: 104px;
+  top: 393px;
+}
+#l33
+{
+  position: absolute;
+  left: 157px;
+  top: 393px;
+}
+#l34
+{
+  position: absolute;
+  left: 212px;
+  top: 393px;
+}
+#l35
+{
+  position: absolute;
+  left: 265px;
+  top: 393px;
+}
+#l36
+{
+  position: absolute;
+  left: 320px;
+  top: 393px;
+}
+#l37
+{
+  position: absolute;
+  left: 48px;
+  top: 437px;
+}
+#l38
+{
+  position: absolute;
+  left: 104px;
+  top: 437px;
+}
+#l39
+{
+  position: absolute;
+  left: 157px;
+  top: 437px;
+}
+#l40
+{
+  position: absolute;
+  left: 212px;
+  top: 437px;
+}
+#l41
+{
+  position: absolute;
+  left: 265px;
+  top: 437px;
+}
+#l42
+{
+  position: absolute;
+  left: 320px;
+  top: 437px;
+}
+#l43
+{
+  position: absolute;
+  left: 48px;
+  top: 483px;
+}
+#l44
+{
+  position: absolute;
+  left: 104px;
+  top: 483px;
+}
+#l45
+{
+  position: absolute;
+  left: 157px;
+  top: 483px;
+}
+#l46
+{
+  position: absolute;
+  left: 212px;
+  top: 483px;
+}
+#l47
+{
+  position: absolute;
+  left: 265px;
+  top: 483px;
+}
+#l48
+{
+  position: absolute;
+  left: 320px;
+  top: 483px;
+}
+
+#guessBox
+{
+  position: absolute;
+  top: 530px;
+  left: 145px;
+  text-align: center;
+  background-color: rgba(255,197,211,1);
+  width: 27%;
+  height: 40px;
+  border-radius: 10px;
+  border-color: red;
+  font-size: 18px;
+  color: rgba(0,0,0,1)
+}
+#pinkLine
+{
+  position: absolute;
+  left: 93px;
+  top: 75px;
+  border-width: 4px;
+  border-color:rgba(255,197,211,1);
+  color: rgba(255,197,211,1);
+  background-color: rgba(255,197,211,1);
+  height: 4px;
+  width: 190px;
+}
