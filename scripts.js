@@ -195,7 +195,7 @@ document.addEventListener("DOMContentLoaded", () =>
             let tempCounter = 0
             while (tempFlag == false)
             {
-              if (guessword == guessedHintWords[tempCounter])
+              if (guessWord == guessedHintWords[tempCounter])
               {
                 checkIfGuessed = true;
                 tempFlag = true;
@@ -343,7 +343,7 @@ document.addEventListener("DOMContentLoaded", () =>
           function isStepValid(prevValue, currentValue, path, pointer) 
           {
             const diff = (prevValue - currentValue);
-            const isSame = path.slice(0,pointer).includes(currentValue);
+            let isSame = path.slice(0,pointer).includes(currentValue);
             if (prevValue % 6 == 1)
             {
               //lhs, dont want -7, -1, +5 ,, if rhs, dont want -5, +1, +7
@@ -426,6 +426,7 @@ document.addEventListener("DOMContentLoaded", () =>
     hint();
   });  
 });
+
 
 
 
