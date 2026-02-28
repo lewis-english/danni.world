@@ -1,41 +1,18 @@
-# 👋 Hello developer!
-This project contains a basic HTML structure to get you started. Check our [tutorials for frontend development](https://www.w3schools.com/where_to_start.asp) to learn the basics of [HTML](https://www.w3schools.com/html/default.asp) and [CSS](https://www.w3schools.com/css/default.asp). 🦄
+Live Site: https://www.danni.world/
 
+Overview:
 
-## 🏗 What's next?
+Danni.World is a browser-based daily word search game I built as a surprise for my girlfriend and as a way to teach myself core web development fundamentals. 
 
-Build your project however you like using HTML, CSS and JavaScript. 
+It is inspired by the New York Times' "Strands" game that she frequently plays, where the traditional word search is altered to allow for the "snaking" of words, where they can take any adjacent letter at every position.
 
-Use these four files as your starting point:
+The aim is to find a grid-spanning theme word that is hinted at by the cryptic clue in the Title, and subsequently fill the entire grid with words relating to this theme.
 
-- **README.md:** This is the file that you are reading now. You can change the text in this file to leave information to others about your website - or delete it.
-- **index.html:** This is the default page for your space, where you write HTML, the standard markup language for creating web pages.
-- **styles.css:** Use the CSS file to style your content and change the look of your space with beautiful colors, fonts and much more. 
-- **scripts.js:** Use this file to make your website dynamic and interactive with JavaScript. 
+For every 3 English Dictionary words found that are not clues in the puzzle, the option of a Hint will become available that will highlight the letters of an undiscovered word in the grid.
 
-> **Note:** The **styles.css** and **scripts.js** files link into the **index.html** file so that they are all connected.
+Use of Tech:
+I built this using no frameworks, build tools or external libraries using:
 
+HTML 5 // Javascript // CSS3 // Static Hosting
 
-## 🎨 Where to find everything
-
-- **Fonts:** Add your favorite from **Google fonts**.  
-	[Go to tutorial about fonts](https://www.w3schools.com/w3css/w3css_fonts_google.asp)
-
-- **Icons:** Add icons with **Fontawesome** and their free library.  
-	[Go to tutorial about Fontawesome](https://www.w3schools.com/icons/fontawesome5_intro.asp)
-
-- **Images:** Upload images and add their URLs to your code.  
-	[Go to article about how to upload files](https://support.w3schools.com/hc/en-gb/articles/4410414928017)
-
-> ⚡️ **Tip:** [Set up Google Analytics](https://www.w3schools.com/howto/howto_google_analytics.asp) to get valuable insights about your space and visitors. 
 	
-
-### ⛑ Need support?
-[Join our Discord community](https://discord.gg/6Z7UaRbUQM) and ask questions in the **#spaces-general** channel.
-
-
-### 🚀 Upgrade to Pro
-[Upgrade your account](https://billing.w3schools.com/products/spaces) to boost your space and take your projects to the next level; more requests, more storage and more power for up to 10 spaces.
-
-
-Happy learning!
