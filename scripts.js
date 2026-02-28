@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () =>
   const todaysWords = wordArray[day];
   const letterArray = todaysData.split("");
   const themeName = document.getElementById("gameName");
-  const guessedHintWords = new Array(100).fill(0);
+  let guessedHintWords = new Array(100).fill("");
   themeName.innerHTML = todaysTheme;
     for (let i = 0; i < 48; i++)
     {
@@ -64,6 +64,7 @@ document.addEventListener("DOMContentLoaded", () =>
   var found = 0;
   var hintCount = 0;
   var count = 0;
+  var hintsGiven = 0;
   const max = todaysWords.length;
   var foundWords = new Array(max).fill(0)
   document.getElementById('wordCount').innerHTML = `${count} out of ${max} theme words`
@@ -193,14 +194,14 @@ document.addEventListener("DOMContentLoaded", () =>
             let checkIfGuessed = false;
             let tempFlag = false;
             let tempCounter = 0
-            while (tempFlag == false)
+            while ((tempFlag == false)&&(tempCounter < 100))
             {
-              if (guessWord == guessedHintWords[tempCounter])
+              if (guessWord === guessedHintWords[tempCounter])
               {
                 checkIfGuessed = true;
                 tempFlag = true;
               }
-              else if (guessedHintWords[tempCounter] == 0)
+              else if (guessedHintWords[tempCounter] === "")
               {
                 tempFlag = true;
               }
@@ -214,6 +215,9 @@ document.addEventListener("DOMContentLoaded", () =>
               found = 1;
               hintCount = hintCount + 1;
               updateHint()
+              hintsGiven = hintsGiven + 1;
+              guessedHintWords[hintsGiven] = guessWord;
+              
             }
           }
         }
@@ -416,8 +420,8 @@ document.addEventListener("DOMContentLoaded", () =>
         result = findValidRoute(myArray);
         return result;
      }
-     updateHint();
      hintCount = 0;
+     updateHint();
   }
    
   const myHint = document.getElementById("hintBox")
@@ -426,6 +430,7 @@ document.addEventListener("DOMContentLoaded", () =>
     hint();
   });  
 });
+
 
 
 
