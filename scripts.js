@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", () =>
   const todaysWords = wordArray[day];
   const letterArray = todaysData.split("");
   const themeName = document.getElementById("gameName");
+  const guessedHintWords = new Array(100).fill("");
   themeName.innerHTML = todaysTheme;
     for (let i = 0; i < 48; i++)
     {
@@ -189,6 +190,25 @@ document.addEventListener("DOMContentLoaded", () =>
           tempFound = checkWord(guessWord)
           if (tempFound==true)
           {
+            let checkIfGuessed = false;
+            let tempFlag = false;
+            let tempCounter = 0
+            while (tempFlag == false)
+            {
+              if (guessword == guessedHintWords[tempCounter])
+              {
+                checkIfGuessed = true;
+                tempFlag = true;
+              }
+              else if (guessedHintWords[tempCounter] == "")
+              {
+                tempFlag = true;
+              }
+              else
+              {
+                tempCounter = tempCounter + 1;
+              }
+            }
             found = 1;
             hintCount = hintCount + 1;
             updateHint()
@@ -392,8 +412,8 @@ document.addEventListener("DOMContentLoaded", () =>
         result = findValidRoute(myArray);
         return result;
      }
-    }
     hintCount = 0;
+    }
     updateHint();  
   }
    
@@ -403,4 +423,5 @@ document.addEventListener("DOMContentLoaded", () =>
     hint();
   });  
 });
+
 
