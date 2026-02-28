@@ -1,20 +1,6 @@
 /* Place your JavaScript in this file */
 /*data*/
 /* const myArray = ["0","1","2"]*/
-const d = new Date()
-const da = d.getDay()
-const day = da + 3
-const dataArray = ["","","","","","","","","","","","","","","","","","","","","","","FLHPEDWOAPKAREBYANSRINCNPTEETIRDHIHLSEAEGOENTYVE","","","","","","","",""]
-const themeArray = ["theme1","theme2","theme3","theme4","theme5","theme6","theme7","theme8","theme9","theme10","theme11","theme12","theme13","theme14","theme15","theme16","theme17","theme18","theme19","theme20","theme21","theme22","I Wish You A","Last Night","I Got A Thing..","Remember When?","It's Raining...","You Can Call Me Al","55 Burgers 55 Fries","Let's Take A Trip Down","theme31"]
-const wordArray = [[""],[""],[""],[""],[""],[""], [""],[""],[""],[""],[""],[""],[""],[""],[""],[""],[""],[""],[""],[""],[""],[""],["HAPPYBIRTHDAY","CAKE","LOVE","FLOWERS","PRESENT","EIGHTEEN","DANNI"],[""],[""],[""],[""],[""],[""],[""],[""]]
-var todaysTheme = themeArray[day]
-var todaysData = dataArray[day]
-var todaysWords = wordArray[day]
-var letterArray = todaysData.split("")
-themeName = document.getElementById("gameName")
-themeName.innerHTML = todaysTheme
-document.addEventListener("DOMContentLoaded", () => {
-    for (let i = 0; i < 48; i++) {
 document.addEventListener("DOMContentLoaded", () => 
 {
   const d = new Date()
@@ -23,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () =>
   const dataArray = [["LLTUIPEBPSLREULAKAUREVRLLBNDAFSEWOLFRSOOFAERLIDD"],["FRONSRFAAEOECSSONGILOPAARUNNRPATIRKIGMNEAGGEGGNI"],["CHAPHCOSHOOTMEOCHOEELATATFEPEHTAFPTCLDOARAICECFM"],[""],[""],["ADNEFLRNNIRRAEIVIGZYEHOHZARPTTJPRSOOEAIABONIWSRY"],[""],[""],[""],[""],[""],[""],[""],["VALDRAIFETHCGTSNNEEIMTETVSIEFROSNBRULYEAUOOUSRYF"],["HELSIELOOFHTLALWITWIIRTCNDGSALRAHIEKOYTDNICSBERL"],["INELTTHPODRUSELPUSLAOTCOIONIFEEALELASRCARHBASHKW"],
  ["SEOHSHRUNWACMPGNITASKRANRTRNPGAHUACENOLPTRKIOMEE"],["RATIAMPDACTIRMUEHNIEQAMTILTNGENAIOERTRCTIFEGSCNU"],["BKERNSOKFIPSNKFEMEUREOOESAGCRFFWLWIGSISENNEIHWNI"],["ERBOUUCEDRQEONPETSITSSMUGNREMWRVIDERIODHCUNGWSCH"],["TOLCNEHINEDEELIGINSRNNLILELREBIWIONMNONILUEPENEN"],
  ["TOFCOCREKPAAARASREPWTORPODLHWNPROEPIEEOREUCKWSNG"],["RNNROSAUINOBKHAGCRODBNEODIRACOASALBKNENAWSIKDSEN"],["GECHESRNIRTHSOLANEEYTMEANESDIDROASELNSOYBAOICADN"],["LGAITEEHNRSRSEAPQACLGOEURAEHNSITPRHECMOHNXSUBOGA"],["REEBDNOWTMIIPITBETYNGSTEDDAIMVDPBTGIEETEMRRFSNIG"],["AGUTRPBLLAOSUYEITPGLICNAARANIFSERTARUNINUOHGARYC"],["EENOOBTHRAFAACIGFBHIRHESOLNIAENOAFLAIRHERBTNAPZE"],["WAESKIOVSNTGRCTECRITAPHIMIEOTLAOTTSLZPNEASZISDAL"],["NUDEMYSLLMETTERORAOBYKSPNLRWIFHAOERLANCRNLLLEOWA"],["ATEIDTTANSEOSPNTINNKOHGHPIIRETEGSESSLASAPNLILPAI"]]
-  const themeArray = ["Nice Aroma","Add a little bit of spice","One lotto hotto choco...","theme4","theme5","I Love You Danni","theme7","theme8","theme9","theme10","theme11","theme12","theme13","Will you be mine for ...?","Places to be","Under the Sea","Joint Hobby","Tuesday Morning Ago","Favourite Passtime","The Day I'm Waiting For","Everything in Line","____ mode","Sponsorship Deal","Geography Whizz","Back to School","Risk it ALl","Around the Continent","Sights in the Savannah","55 Burgers 55 Fries","Let's Take A Trip Down","Turn It Up"]
+  const themeArray = ["Nice Aroma","Add a little bit of spice","One lotto hotto choco...","theme4","theme5","I Love You Danni","theme7","theme8","theme9","theme10","theme11","theme12","theme13","Will you be mine for ...?","Places to be","Under the Sea","Joint Hobby","Tuesday Morning Ago","Favourite Passtime","The Day I'm Waiting For","Everything in Line","____ mode","Sponsorship Deal","Geography Whizz","Back to School","Risk it ALl","Around the Continent","Sights in the Savannah.test","55 Burgers 55 Fries","Let's Take A Trip Down","Turn It Up"]
   const wordArray = [["FLOWERS","TULIP","ROSE","DAFFODIL","LAVENDAR","LARKSPUR","BLUEBELL"],["SEASONING","NUTMEG","PAPRIKA","SAFFRON","GINGER","GARLIC","OREGANO"],["COFFEESHOP","HOTCHOCOLATE","MOCHA","MATCHA","ICEDLATTE","FRAPPE"],[""],[""],["ANNIVERSARY","YEAR","PARIS","PHOTOBOOTH","GIRLFRIEND","WINE","JAZZ"],[""],[""],[""],[""],[""],[""],[""],["VALENTINES","LOVE","CARD","GIFTS","FOURTEENTH","FEBRUARY","MISSYOU"],["HOLIDAYS","THEISLEOFWIGHT","CORNWALL","BERLIN","LAKEDISTRICT"],["SEALIFE","DOLPHIN","SEALION","TURTLE","SHARK","OCTOPUS","CRAB","WHALE"],["RUNNING","SHOES","WATCH","PARKRUN","KILOMETRE","GPS","PACE","MARATHON"],["MATHEMATICS","PRIME","INTEGER","QUADRATIC","INTEGRAL","FUNCTION"],["WELCOMEOFFER","FREESPINS","BONUS","WINNING","KKK","FISHIES","WAGER"],["WEDDING","VOWS","RING","DRESS","SUMMER","CHURCH","BOUQUET","RECEPTION"],["ENDINGINLINE","POWERLINE","ONLINE","WASHINGLINE","NUMBERLINE"],["FEATHERS","PENGUIN","PARROT","OWL","SPARROW","PEACOCK","WOODPECKER"],["RUNNINGBRANDS","NIKE","ADIDAS","HOKA","BROOKS","COROS","NEWBALANCE"],["COASTLINE","EROSION","ARCHES","BAY","HEADLAND","SEDIMENT","GROYNES"],["SHAPES","TRIANGLE","SQUARE","CIRCLE","HEXAGON","HEPTAGON","RHOMBUS"],["BETTINGSITES","BETFRED","PADDYPOWER","BETMGM","VIRGIN","MIDNITE"],["COUNTRIES","ITALY","SPAIN","FRANCE","HUNGARY","BULGARIA","PORTUGAL"],["SAFARI","ELEPHANT","GIRAFFE","ZEBRA","LION","CHEETAH","BABOON","RHINO"],["KITCHENSTATIONS","MICROWAVES","SALADETTE","GRILL","POTS","PIZZA"],["MEMORYLANE","DUNSTONHALL","FIREWORKS","CORNWALL","BELLE","PARTY"],["PINKPANTHERESS","TONIGHT","ILLEGAL","STATESIDE","PASSION","PAIN"]]
   const todaysTheme = themeArray[day];
   const todaysArrayData = dataArray[day];
@@ -31,11 +17,11 @@ document.addEventListener("DOMContentLoaded", () =>
   const todaysWords = wordArray[day];
   const letterArray = todaysData.split("");
   const themeName = document.getElementById("gameName");
+  const guessedHintWords = new Array(100).fill("");
   themeName.innerHTML = todaysTheme;
     for (let i = 0; i < 48; i++)
     {
         const element = document.getElementById(`l${i + 1}`);
-        if (element) {
         if (element)
         {
             element.textContent = letterArray[i];
@@ -204,6 +190,25 @@ document.addEventListener("DOMContentLoaded", () =>
           tempFound = checkWord(guessWord)
           if (tempFound==true)
           {
+            let checkIfGuessed = false;
+            let tempFlag = false;
+            let tempCounter = 0
+            while (tempFlag == false)
+            {
+              if (guessword == guessedHintWords[tempCounter])
+              {
+                checkIfGuessed = true;
+                tempFlag = true;
+              }
+              else if (guessedHintWords[tempCounter] == "")
+              {
+                tempFlag = true;
+              }
+              else
+              {
+                tempCounter = tempCounter + 1;
+              }
+            }
             found = 1;
             hintCount = hintCount + 1;
             updateHint()
@@ -407,8 +412,8 @@ document.addEventListener("DOMContentLoaded", () =>
         result = findValidRoute(myArray);
         return result;
      }
-    }
     hintCount = 0;
+    }
     updateHint();  
   }
    
@@ -418,9 +423,5 @@ document.addEventListener("DOMContentLoaded", () =>
     hint();
   });  
 });
-
-
-
-
 
 
