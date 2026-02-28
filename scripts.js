@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () =>
   const todaysWords = wordArray[day];
   const letterArray = todaysData.split("");
   const themeName = document.getElementById("gameName");
-  const guessedHintWords = new Array(100).fill("");
+  const guessedHintWords = new Array(100).fill(0);
   themeName.innerHTML = todaysTheme;
     for (let i = 0; i < 48; i++)
     {
@@ -200,7 +200,7 @@ document.addEventListener("DOMContentLoaded", () =>
                 checkIfGuessed = true;
                 tempFlag = true;
               }
-              else if (guessedHintWords[tempCounter] == "")
+              else if (guessedHintWords[tempCounter] == 0)
               {
                 tempFlag = true;
               }
@@ -209,9 +209,12 @@ document.addEventListener("DOMContentLoaded", () =>
                 tempCounter = tempCounter + 1;
               }
             }
-            found = 1;
-            hintCount = hintCount + 1;
-            updateHint()
+            if (checkIfGuessed == false) // user hasn't already guessed this word
+            {  
+              found = 1;
+              hintCount = hintCount + 1;
+              updateHint()
+            }
           }
         }
       }
@@ -244,11 +247,12 @@ document.addEventListener("DOMContentLoaded", () =>
     {
       document.getElementById('hintBox').style.backgroundColor = "rgba(0,0,0,0.6)";
     }
-    if (hintCount==3)
+    if (hintCount > 2)
     {
       document.getElementById('hintBox').style.backgroundColor = "rgba(0,0,0,0.8)";
       //document.getElementById('hintBox').style.borderColor = "rgba(159, 139, 22, 0.8)";
       document.getElementById('hintBox').innerHTML = "Hint!";
+      
     }
   }
   function hint()
@@ -412,9 +416,8 @@ document.addEventListener("DOMContentLoaded", () =>
         result = findValidRoute(myArray);
         return result;
      }
-    hintCount = 0;
-    }
-    updateHint();  
+     updateHint();
+     hintCount = 0;
   }
    
   const myHint = document.getElementById("hintBox")
@@ -423,5 +426,6 @@ document.addEventListener("DOMContentLoaded", () =>
     hint();
   });  
 });
+
 
 
