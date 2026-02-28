@@ -28,90 +28,76 @@
     </head>
 
     <body>
-        <style>
-        .lblTitleDiv
-        {
-            margin: auto;
-            border-radius: 25px;
-            border: 3px solid #FFC5D3;
-            padding: 20px;
-            width: 40%;
-            height: 8%;
-            text-align: center;
-            font-size: 18px;
-            font-weight: 1000;
-        }
-        </style>
-        
         <br>
         <div class="lblTitleDiv">
             Today's theme is: 
             <h4 id="gameName"></h4>
         </div>      
-        <br>   
+        <br>
+        <br>  
             <div class= "rowa">
-                <button id="btn1" class="heartShapedButtons" type=button></button>
-                <button id="btn2" class="heartShapedButtons" type=button></button>
-                <button id="btn3" class="heartShapedButtons" type=button></button>
-                <button id="btn4" class="heartShapedButtons" type=button></button>
-                <button id="btn5" class="heartShapedButtons" type=button></button>
-                <button id="btn6" class="heartShapedButtons" type=button></button>
+                <button id="btn1" class="heartShapedButtons" type="button"></button>
+                <button id="btn2" class="heartShapedButtons" type="button"></button>
+                <button id="btn3" class="heartShapedButtons" type="button"></button>
+                <button id="btn4" class="heartShapedButtons" type="button"></button>
+                <button id="btn5" class="heartShapedButtons" type="button"></button>
+                <button id="btn6" class="heartShapedButtons" type="button"></button>
             </div>
             <div class="rowa">
-                <button id="btn7" class="heartShapedButtons" type=button></button>
-                <button id="btn8" class="heartShapedButtons" type=button></button>
-                <button id="btn9" class="heartShapedButtons" type=button></button>
-                <button id="btn10" class="heartShapedButtons" type=button></button>
-                <button id="btn11" class="heartShapedButtons" type=button></button>
-                <button id="btn12" class="heartShapedButtons" type=button></button>
+                <button id="btn7" class="heartShapedButtons" type="button" onclick="letterClick(7)"></button>
+                <button id="btn8" class="heartShapedButtons" type="button" onclick="letterClick(8)"></button>
+                <button id="btn9" class="heartShapedButtons" type="button" onclick="letterClick(9)"></button>
+                <button id="btn10" class="heartShapedButtons" type="button" onclick="letterClick(10)"></button>
+                <button id="btn11" class="heartShapedButtons" type="button" onclick="letterClick(11)"></button>
+                <button id="btn12" class="heartShapedButtons" type="button" onclick="letterClick(12)"></button>
             </div>
             <div class="rowa">
-                <button id="btn13" class="heartShapedButtons" type=button></button>
-                <button id="btn14" class="heartShapedButtons" type=button></button>
-                <button id="btn15" class="heartShapedButtons" type=button></button>
-                <button id="btn16" class="heartShapedButtons" type=button></button>
-                <button id="btn17" class="heartShapedButtons" type=button></button>
-                <button id="btn18" class="heartShapedButtons" type=button></button>
+                <button id="btn13" class="heartShapedButtons" type="button" onclick="letterClick(13)"></button>
+                <button id="btn14" class="heartShapedButtons" type="button" onclick="letterClick(14)"></button>
+                <button id="btn15" class="heartShapedButtons" type="button" onclick="letterClick(15)"></button>
+                <button id="btn16" class="heartShapedButtons" type="button" onclick="letterClick(16)"></button>
+                <button id="btn17" class="heartShapedButtons" type="button" onclick="letterClick(17)"></button>
+                <button id="btn18" class="heartShapedButtons" type="button" onclick="letterClick(18)"></button>
             </div>   
             <div class="rowa">
-                <button id="btn19" class="heartShapedButtons" type=button></button>
-                <button id="btn20" class="heartShapedButtons" type=button></button>
-                <button id="btn21" class="heartShapedButtons" type=button></button>
-                <button id="btn22" class="heartShapedButtons" type=button></button>
-                <button id="btn23" class="heartShapedButtons" type=button></button>
-                <button id="btn24" class="heartShapedButtons" type=button></button>
+                <button id="btn19" class="heartShapedButtons" type="button" onclick="letterClick(19)"></button>
+                <button id="btn20" class="heartShapedButtons" type="button" onclick="letterClick(20)"></button>
+                <button id="btn21" class="heartShapedButtons" type="button" onclick="letterClick(21)"></button>
+                <button id="btn22" class="heartShapedButtons" type="button" onclick="letterClick(22)"></button>
+                <button id="btn23" class="heartShapedButtons" type="button" onclick="letterClick(23)"></button>
+                <button id="btn24" class="heartShapedButtons" type="button" onclick="letterClick(24)"></button>
             </div>
             <div class="rowa">
-                <button id="btn25" class="heartShapedButtons" type=button></button>
-                <button id="btn26" class="heartShapedButtons" type=button></button>
-                <button id="btn27" class="heartShapedButtons" type=button></button>
-                <button id="btn28" class="heartShapedButtons" type=button></button>
-                <button id="btn29" class="heartShapedButtons" type=button></button>
-                <button id="btn30" class="heartShapedButtons" type=button></button>
+                <button id="btn25" class="heartShapedButtons" type="button" onclick="letterClick(25)"></button>
+                <button id="btn26" class="heartShapedButtons" type="button" onclick="letterClick(26)"></button>
+                <button id="btn27" class="heartShapedButtons" type="button" onclick="letterClick(27)"></button>
+                <button id="btn28" class="heartShapedButtons" type="button" onclick="letterClick(28)"></button>
+                <button id="btn29" class="heartShapedButtons" type="button" onclick="letterClick(29)"></button>
+                <button id="btn30" class="heartShapedButtons" type="button" onclick="letterClick(30)"></button>
             </div>
             <div class="rowa">
-                <button id="btn31" class="heartShapedButtons" type=button></button>
-                <button id="btn32" class="heartShapedButtons" type=button></button>
-                <button id="btn33" class="heartShapedButtons" type=button></button>
-                <button id="btn34" class="heartShapedButtons" type=button></button>
-                <button id="btn35" class="heartShapedButtons" type=button></button>
-                <button id="btn36" class="heartShapedButtons" type=button></button>
+                <button id="btn31" class="heartShapedButtons" type="button" onclick="letterClick(31)"></button>
+                <button id="btn32" class="heartShapedButtons" type="button" onclick="letterClick(32)"></button>
+                <button id="btn33" class="heartShapedButtons" type="button" onclick="letterClick(33)"></button>
+                <button id="btn34" class="heartShapedButtons" type="button" onclick="letterClick(34)"></button>
+                <button id="btn35" class="heartShapedButtons" type="button" onclick="letterClick(35)"></button>
+                <button id="btn36" class="heartShapedButtons" type="button" onclick="letterClick(36)"></button>
             </div>
             <div class="rowa">
-                <button id="btn37" class="heartShapedButtons" type=button></button>
-                <button id="btn38" class="heartShapedButtons" type=button></button>
-                <button id="btn39" class="heartShapedButtons" type=button></button>
-                <button id="btn40" class="heartShapedButtons" type=button></button>
-                <button id="btn41" class="heartShapedButtons" type=button></button>
-                <button id="btn42" class="heartShapedButtons" type=button></button>
+                <button id="btn37" class="heartShapedButtons" type="button" onclick="letterClick(37)"></button>
+                <button id="btn38" class="heartShapedButtons" type="button" onclick="letterClick(38)"></button>
+                <button id="btn39" class="heartShapedButtons" type="button" onclick="letterClick(39)"></button>
+                <button id="btn40" class="heartShapedButtons" type="button" onclick="letterClick(40)"></button>
+                <button id="btn41" class="heartShapedButtons" type="button" onclick="letterClick(41)"></button>
+                <button id="btn42" class="heartShapedButtons" type="button" onclick="letterClick(42)"></button>
             </div>
             <div class="rowa">
-                <button id="btn43" class="heartShapedButtons" type=button></button>
-                <button id="btn44" class="heartShapedButtons" type=button></button>
-                <button id="btn45" class="heartShapedButtons" type=button></button>
-                <button id="btn46" class="heartShapedButtons" type=button></button>
-                <button id="btn47" class="heartShapedButtons" type=button></button>
-                <button id="btn48" class="heartShapedButtons" type=button></button>
+                <button id="btn43" class="heartShapedButtons" type="button" onclick="letterClick(43)"></button>
+                <button id="btn44" class="heartShapedButtons" type="button" onclick="letterClick(44)"></button>
+                <button id="btn45" class="heartShapedButtons" type="button" onclick="letterClick(45)"></button>
+                <button id="btn46" class="heartShapedButtons" type="button" onclick="letterClick(46)"></button>
+                <button id="btn47" class="heartShapedButtons" type="button" onclick="letterClick(47)"></button>
+                <button id="btn48" class="heartShapedButtons" type="button" onclick="letterClick(48)"></button>
             </div>
             <div class="letters1" id="l1">A</div>
             <div class="letters1" id="l2">B</div>
@@ -162,9 +148,13 @@
             <div class="letters1" id="l47">A</div>
             <div class="letters1" id="l48">A</div>
 
-            <button id="guessBox" type="button">Guess</button>
+            <div class = "bottomRow">
+               <button id="hintBox" type="button">Hint</button>
+               <button id="guessBox" type="button">Guess</button>
+               <div id="wordCount">0 out of 8 theme words</div>
+            </div>
+            <div id="guessWordDisplay"></div>
 
-            <div id="pinkLine"></div>
             
 
     </body>
